@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %} 
+{% load static %}
+{% block title %}Saved Posts{% endblock %}
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/saved_posts.css' %}">
+{% endblock %}
+{% block content %}
+<header id="savepostheader">
+    <a href="{% url 'starting-page' %} ">J's Blog</a>
+</header>
+    <section id="savedpost">
+        <h1>Saved Posts</h1>
+        {% if not has_posts %} 
+            <p>No Saved posts!!!</p>
+        {% endif %}
+        <ul>
+        {% for post in posts %}
+            <li><a href="{% url 'selectedpost' post.slug %}">{{ post.title }} - {{ post.excerpt }} </a></li>
+        {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

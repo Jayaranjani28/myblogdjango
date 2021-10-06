@@ -1,0 +1,22 @@
+#titlehead{
+background-color: rgb(138, 4, 87);
+
+padding:3rem;
+border-radius: 20px;
+}
+#titlehead a{
+    text-align: left;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+
+}
+#titlehead a:hover{
+color:black;
+}
+
+#titlehead h1{
+    text-align: center;
+    color:white;
+}
+

@@ -1,0 +1,129 @@
+.authorinfo{
+    color:royalblue;
+    text-align: right;
+    font-size: 20px;
+}
+#titlehead h1{
+    display: flex;
+}
+#comment-form{
+    width: 90%;
+    margin: 3rem auto;
+    max-width: 40rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0,0.25);
+    padding: 1rem 2rem;
+
+}
+#comment-form button{
+    background-color: rgb(138, 4, 87);
+    color:white;
+    border:1px solid rgb(138, 4, 87);
+    padding:0.5rem 1.5rem;
+    border-radius: 6px;
+    
+}
+#comment-form button:hover,
+#comment-form button:active{
+    background-color: rgb(163, 25, 110);
+    border-color:rgb(163, 25, 110); ;
+}
+
+
+.form-control{
+    margin-bottom: 1rem;
+
+}
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display:inline-block;
+
+}
+.form-control input,
+.form-control textarea{
+    display:block;
+    width:100%;
+    padding:0.25rem;
+    border-radius: 6px;
+    border:1px solid gray;
+}
+
+.errorlist
+{
+    list-style: none;
+    margin:0.5rem 0;
+    padding: 0;
+    color:rgb(179, 46, 46);
+
+}
+
+.invalid label{
+    color:rgb(179, 46, 46);
+
+}
+.invalid input,
+.invalid textarea{
+    border-color: rgb(179, 46, 46);
+    background-color: white;
+}
+#error-block{
+    
+    border:1px solid rgb(214, 111, 111);
+    background-color: rgb(214, 111, 111);
+    width: 90%;
+    max-width: 40rem;
+    text-align: center;
+    border-radius: 6px;
+    justify-content: space-between;
+}
+#error-block a{
+    text-decoration: none;
+    border: 1px solid rgb(179, 46, 46);
+    background-color: rgb(179, 46, 46);
+    color: white;
+    border-radius: 5px;
+
+}
+#comments{
+    width: 90%;
+    margin: 3rem auto;
+    max-width: 50rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0,0.25);
+    padding: 1rem 2rem;
+    font-weight: lighter;
+}
+
+#comments ul {
+    list-style: none;
+    margin:0;
+    padding:1rem 2rem;
+}
+#comments li{
+    margin-bottom: 1 rem;
+    border-bottom: 2px solid grey;
+
+}
+#comments li:last-of-type{
+    border-bottom :none;
+
+}
+#comments h4{
+    color:rgb(105, 102, 102);
+}
+#readlater button{
+    background-color: transparent;
+    border:1px solid white;
+    padding:0.5rem 2rem;
+    color:White;
+    font:inherit;
+    border-radius: 6px;
+}
+#readlater button:hover,
+#readlater button:active{
+background-color: white;
+color:rgb(138, 4, 87);
+}

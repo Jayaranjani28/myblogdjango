@@ -1,0 +1,21 @@
+.card
+{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+   
+    
+    text-decoration: none;
+    
+   
+}
+.card-link
+{
+    text-align: center;
+    text-decoration: none;
+}
+.card-link :hover,
+.card-link :active{
+    background-color:rgb(138, 4, 87);
+    color:black;
+}

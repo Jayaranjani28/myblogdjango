@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %} 
+{% load static %}
+{% block title %}Allposts{% endblock %}
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/allpost.css' %}">
+<link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+{% block content %}
+<header id="titlehead">
+    <a href="{% url 'starting-page' %}">J's Blog</a>
+    <h1>All Posts</h1>
+</header>
+<section>
+    <div class="card-group">
+        {% for post in all_posts %}
+
+            {% include "blog/includes/post.html" %}
+          
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

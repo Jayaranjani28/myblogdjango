@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %} 
+{% load static %}
+{% block title %}posts
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+{% block content %}
+<div class="jumbotron">
+  
+        <a href="{% url 'starting-page' %} ">J's Blog</a>
+        <nav class="allposts">
+                <a href="{% url 'allposts' %}">All Posts</a>
+                <a href="{% url 'save-post' %}">Saved Posts</a>
+        </nav>
+    
+</div>
+
+<div class="card-group">
+        {% for post in posts %}
+
+            {% include "blog/includes/post.html" %}
+          
+    {% endfor %}
+</div>
+    
+    {% endblock %}
+    
